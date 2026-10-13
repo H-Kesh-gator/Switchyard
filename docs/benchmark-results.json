@@ -1,0 +1,27 @@
+{
+  "timestamp_utc": "2026-10-12T08:58:49.170303+00:00",
+  "environment": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "url": "http://127.0.0.1:8080/",
+  "requests": 300,
+  "concurrency": 8,
+  "warmup_requests": 30,
+  "elapsed_seconds": 1.926,
+  "requests_per_second": 155.76,
+  "successful_requests_per_second": 155.76,
+  "latency_ms": {
+    "p50": 47.882,
+    "p95": 81.819,
+    "p99": 99.841,
+    "max": 115.075
+  },
+  "statuses": {
+    "200": 300
+  },
+  "backend_counts": {
+    "alpha": 100,
+    "bravo": 100,
+    "charlie": 100
+  },
+  "methodology": "Closed-loop, persistent HTTP/1.1, one outstanding request per Python worker; warmup excluded; access logging enabled."
+}

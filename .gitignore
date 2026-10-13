@@ -1,0 +1,9 @@
+/build/
+/dist/
+/target/
+/.idea/
+*.iml
+*.log
+.env
+__pycache__/
+*.jfr

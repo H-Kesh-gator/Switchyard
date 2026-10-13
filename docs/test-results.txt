@@ -1,0 +1,29 @@
+Executed with bash scripts/test.sh; OpenJDK 17.0.20; Linux x86_64; 2026-10-12
+
+PASS configuration validation rejects malformed/unknown input
+PASS round-robin distributes equally
+PASS smooth weighted round-robin honours 3:1:1
+PASS least-connections reserves atomically and balances ties
+PASS circuit opens, permits one probe, and ignores stale success
+PASS token bucket refills and bounds client cardinality
+PASS binary bodies, duplicate cookies and safe forwarding headers
+PASS encoded path/query, HEAD, 204 and redirects
+PASS connection-nominated headers removed in both directions
+PASS oversized known and chunked request bodies rejected
+PASS oversized upstream response rejected before unbounded allocation
+PASS GET retries a different backend after 503
+PASS POST failure is never automatically replayed
+PASS body-bearing GET is not automatically replayed
+PASS healthy -> unhealthy -> recovered routing
+PASS circuit isolates 503s even when health checks pass
+PASS full response deadline includes stalled response bodies
+PASS rate limiting returns 429 and Retry-After
+PASS bounded capacity rejects excess work and later recovers
+PASS bounded admission queue expires with 503
+PASS reload preserves existing state and rejects invalid config atomically
+PASS reload introduces a new backend only after health succeeds
+PASS admin mutations require bearer token
+PASS CONNECT, TRACE, upgrade and absolute-form targets rejected
+PASS metrics and dashboard endpoints render
+PASS graceful shutdown finishes an admitted request
+PASS: 26 tests
