@@ -136,7 +136,7 @@ export SWITCHYARD_ADMIN_TOKEN='replace-with-a-long-random-secret'
 docker compose up --build
 ```
 
-Proxy and admin published ports bind to host loopback only. Open the dashboard and supply the environment token. In Docker mode use `docker compose stop alpha` / `docker compose start alpha` for actual process failover; the dashboard's fixture controls are deliberately absent. Run `docker compose down` when finished. Image pulls require network access. Docker execution was not available in the delivery environment; these files are provided for local validation.
+Proxy and admin published ports bind to host loopback only. Open the dashboard and supply the environment token. In Docker mode use `docker compose stop alpha` / `docker compose start alpha` for actual process failover; the dashboard's fixture controls are deliberately absent. Run `docker compose down` when finished. Image pulls require network access. Validate Docker execution locally.
 
 ## Tests and benchmarks
 
